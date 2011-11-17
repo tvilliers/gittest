@@ -11,8 +11,8 @@ use MIME::Base64 qw(encode_base64);
 
 use Data::Dumper;
 
-my $user = 'tdevilliers:EDSA';
-my $pass = 'd2b115d46c42fb6a734c9b95e5f3db46';
+my $user = '__YOUR__NAME';
+my $pass = '__YOUR_SECRET';
 
 sub _auth_digest {
     my $text = shift;
@@ -69,7 +69,7 @@ if ( $client->responseCode() == 200 ) {
 $method="Report.QueueRanked";
 $data='{
     "reportDescription":{
-        "reportSuiteID":"edsadetelefoongidsnl",
+        "reportSuiteID":"__YOUR_REPORTSUITE",
         "dateFrom":"2011-11-01",
         "dateTo":"2011-11-11",
         "metrics":[{"id":"pageviews"}],
